@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if(Music != null) { %>
+    <p>Total Songs: <%= totalCount %></p>
+
+    <table border="1px">
+        <tr>
+            <th>Song Name</th>
+            <th>Film Name</th>
+            <th>Music Director</th>
+            <th>Singer</th>
+            <th>Actor</th>
+            <th>Actress</th>
+        </tr>  
+        
+        <% Music.forEach(element =>{ %>
+            <tr>
+                <th><%= element.song_name %></th>
+                <th><%= element.film_name %></th>
+                <th><%= element.music_dir %></th>
+                <th><%= element.singer %></th>
+                <th><%= element.actor %></th>
+                <th><%= element.actress %></th>
+            </tr>
+        <% }) %>
+        
+    </table>
+    <% } %>
+</body>
+</html>

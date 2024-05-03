@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        .container .card{
+            background-color: rgb(246, 246, 231);
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom:20px;
+        }
+        h1 ,#registrationForm{
+            text-align: center;
+        }
+        button{
+            float: right;
+            font-size: 16px; /* Adjust the font size as needed */
+            padding: 10px 20px;
+            background-color: rgb(242, 152, 16);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Profile Page</h2>
+            <button onclick="logout()" style="float: right;">LogOut</button>
+            <hr>
+            <h3>
+                Welcome
+            </h3>
+            <h4>
+                Name :
+                <script>
+                    document.write(localStorage.getItem("name"));
+                </script>
+            </h4>
+            <h4>
+                Email :
+                <script>
+                    document.write(localStorage.getItem("email"));
+                </script>
+            </h4>
+        </div>
+    </div>
+    <script>
+        function logout()
+        {
+            localStorage.removeItem("name");
+            localStorage.removeItem("email");
+            window.location.href="login.html";
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+.navbar {
+    align-items: center;
+    background-color: bisque;
+    position: absolute;
+    width: 199vh;
+    height: 8vh;
+    display: flex;
+}
+
+.nav-item {
+    padding: 1vh;
+    position: relative;
+}
+
+a {
+    text-decoration-color: black;
+    text-decoration: none;
+}
+
+.cont {
+    display: flex;
+    padding-top: 8vh;
+    height: 22vh;
+}
+
+.cont2 {
+    display: flex;
+    padding-top: 56vh;
+    height: 22vh;
+}
+
+.card {
+    border-style: dotted;
+    text-align: center;
+    padding-left: 5.6vh;
+    padding-right: 5.6vh;
+    padding-top: 5.6vh;
+    padding-bottom: 5.6vh;
+    background-color: rgb(247, 205, 140);
+}
+
+.art {
+    border-style: double;
+    border-radius: 25%;
+    padding-bottom: 0vh;
+}
+
+.paint-title {
+    text-decoration: solid;
+}
+
+.artist-name {
+    text-decoration: solid;
+}
+
+.art-description {
+    text-decoration: wavy;
+}
+
+.individual-item {
+    display: flex;
+    padding-top: 24vh;
+}
+
+.imgg {
+    border-radius: 25vh;
+    padding-left: 29vh;
+    padding-right: 25vh;
+}
+
+.img-content {
+    text-align: center;
+    padding-left: 25vh;
+    padding-right: 25vh;
+}

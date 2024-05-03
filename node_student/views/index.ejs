@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Enter Student Details</h2>
+        <form action="/addmarks" method="post">
+            <label for="name">Enter Name : </label>
+            <input type="text" name="name"><br><br>
+            <label for="roll_no">Enter Roll no : </label>
+            <input type="text" name="roll_no"><br><br>
+            <label for="wad_mars">Enter wad_mars : </label>
+            <input type="text" name="wad_marks"><br><br>
+            <label for="cc_marks">Enter cc_marks : </label>
+            <input type="text" name="cc_marks"><br><br>
+            <label for="cns_marks">Enter cns_marks : </label>
+            <input type="text" name="cns_marks"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div><br><br>
+    <div>
+        <h3>To get all students data : </h3>
+        <form action="/getmarks" method="get">
+            <button type="submit">Click here</button>
+        </form>
+    </div><br><br>
+    <div>
+        <h3>To get students scoring more than 20 marks in CC click the below button : </h3>
+        <form action="/ccgreaterthan20" method="get">
+            <button type="submit">Click here</button>
+        </form>
+    </div><br><br>
+    <div>
+        <h3>To get students scoring more than 20 marks in all subjects click the below button : </h3>
+        <form action="/allgreaterthan20" method="get">
+            <button type="submit">Click here</button>
+        </form>
+    </div><br><br>
+    <div>
+        <h3>Update student data :  </h3>
+        <form action="/update" method="post">
+            <label for="roll_no">Enter Roll no : </label>
+            <input type="text" name="roll_no"><br><br>
+            <label for="subject">Enter Subject : </label>
+            <input type="text" name="subject"><br><br>
+            <label for="new_marks">Enter New marks : </label>
+            <input type="text" name="new_marks"><br><br>
+
+            <button type="submit">Click here</button>
+        </form>
+    </div><br><br>
+
+    <div>
+        <h3>click the below button to list the names who got less than 40 in both cc and cns :  </h3>
+        <form action="/lessthan20" method="get">
+            <button type="submit">Click here</button>
+        </form>
+    </div><br><br>
+
+    <div>
+        <h3>Delete student data :  </h3>
+        <form action="/delete" method="post">
+            <label for="roll_no">Enter Roll no : </label>
+            <input type="text" name="roll_no"><br><br>
+
+            <button type="submit">Click here</button>
+        </form>
+    </div><br><br>
+</body>
+</html>

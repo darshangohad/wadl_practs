@@ -1,0 +1,15 @@
+{
+  "name": "art_gallery",
+  "version": "1.0.0",
+  "description": "ArtGallery with Static Web Server in NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Tanmay Kokate",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

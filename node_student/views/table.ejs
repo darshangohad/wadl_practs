@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Roll no</th>
+                <th>WAD</th>
+                <th>CC</th>
+                <th>CNS</th>
+            </tr>
+
+            <% student.forEach(element => { %>
+                <tr>
+                    <th><%= element.name %></th>
+                    <th><%= element.roll_no %></th>
+                    <th><%= element.wad_marks %></th>
+                    <th><%= element.cc_marks %></th>
+                    <th><%= element.cns_marks %></th>
+                </tr>
+            <% }) %>
+        </table>
+    </div>
+</body>
+</html>
